@@ -272,12 +272,16 @@ body {
 margin-top: 0;
 margin-bottom: 3px;
 text-align: center;
+font-size: 30px;
+line-height: 36px;
 color: #222222;
 }
 
 .featuredTitle {
     text-align: center;
     color: #9F9F9F;
+    font-size: 14px;
+    line-height: 17px;
     margin-bottom: 64px;
 }
 
@@ -350,6 +354,8 @@ color: #222222;
 
 .futuredData {
     padding: 23px 16px 20px;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .futuredName {
