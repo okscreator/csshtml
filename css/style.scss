@@ -454,10 +454,7 @@ body {
 .subscribe {
     background: url(../img/subscribe.jpg) no-repeat;
     background-size: cover;
-    padding-top: 64px;
-    padding-bottom: 109px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 64px 20px 109px;
 
     @media (min-width: 1200px) {
         padding-top: 86px;
@@ -656,7 +653,6 @@ body {
 }
 
 .shoppingCart {
-    /*    width: 100%; */
     min-height: 148px;
     background: #F8F3F4;
 
@@ -771,7 +767,7 @@ body {
             @media (min-width: 768px) {
                 height: 18px;
                 width: 18px;
-                background-position: contain;
+                background-size: contain;
             }
         }
 
@@ -1000,6 +996,156 @@ body {
     }
 }
 
+.registration {
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    @media (max-width: 767px) {
+        padding: 0 8px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1599px) {
+        padding: 0 16px;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .registrationLeft {
+        @media (min-width: 768px) and (max-width: 1599px) {
+            margin-right: 22px;
+        }
+
+        @media (min-width: 1600px) {
+            margin-right: 128px;
+        }
+
+        .registrationNameLabel {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        .registrationInput {
+            border: 1px solid #A4A4A4;
+            height: 44px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 16px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin-top: 19px;
+        }
+
+        .registrationGender {
+            margin-top: 31px;
+            margin-bottom: 33px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            display: flex;
+            align-items: center;
+
+            .hidden,
+            span {
+                display: inline;
+
+                @media (min-width: 1140px) {
+                    display: none;
+                }
+            }
+
+            input {
+                margin-right: 10px;
+
+                &:not(:first-of-type) {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .registrationLoginLabel {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        .registrationText {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            margin-top: 15px;
+            margin-bottom: 39px;
+            color: #B1B1B1;
+        }
+
+        .registrationButton {
+            height: 50px;
+            width: 167px;
+            background: $majorColor;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            border: none;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .registrationRight {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .registrationRightTitle {
+            margin-bottom: 32px;
+        }
+
+        .registrationRightText {
+            margin-bottom: 22px;
+            max-width: 358px;
+
+            @media (max-width: 1600px) {
+                max-width: 652px;
+            }
+        }
+
+        .registrationRightList {
+            padding-left: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                background: url(../img/vector.png) no-repeat;
+                padding-left: 42px;
+
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
 
 .slider {
     background: #F7F7F7;
@@ -1198,7 +1344,7 @@ nav {
     text-align: center;
 
     @media (min-width: 1600px) {
-        padding: 129px 0px;
+        padding: 129px 0;
         border: 1px solid #F7F7F7;
         background: white;
         margin-top: -64px;
@@ -1265,7 +1411,6 @@ nav {
         @media (min-width: 765px) {
             width: 641px;
         }
-
     }
 
     .collectionSize {
